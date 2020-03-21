@@ -1,0 +1,45 @@
+html{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #00935f;
+}
+body{
+    /* 强制页面永远保持 600 像素宽 */
+    width: 600px;
+    /* 为 margin 或 padding 等属性设置两个值时，
+    第一个值代表元素的上方和下方（在这个例子中设置为 0），
+    而第二个值代表左边和右边（在这里，auto 是一个特殊的值，意思是水平方向上左右对称） */
+    margin: 0 auto;
+    background-color: #ff9500;
+    padding: 0 20px 20px 20px;
+    border: 2px solid #fff;
+}
+h1{
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    /* 阴影：第一个值设置水平偏移值 —— 即阴影右移的像素数（负值左移）。
+    第二个值设置垂直偏移值 —— 即阴影下移的像素数（负值上移）。
+    第三个值设置阴影的模糊半径 —— 值越大产生的阴影越模糊。
+    第四个值设置阴影的基色。 */
+    text-shadow: 3px 3px 1px black;
+    font-size: 30px;
+    /* 文字居中 */
+    text-align: center;
+}
+p{
+    color: #8080ff;
+    font-size: 16px;
+    line-height: 2;
+    /* 字符间距 */
+    letter-spacing: 1px;
+}
+img{
+    /* 把图像居中来使页面更美观。
+    可以复用 body 的 margin: 0 auto ，但是需要一点点调整。 
+    <body> 元素是块级元素，意味着它占据了页面的空间并且能够赋予外边距和其他改变间距的值。
+    而图片是内联元素，不具备块级元素的一些功能。
+    所以为了使图像有外边距，我们必须使用 display: block 给予其块级行为。 */
+    display: block;
+    margin: 0 auto;
+}
